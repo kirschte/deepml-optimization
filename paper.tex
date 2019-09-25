@@ -513,13 +513,13 @@ for t in range(1,batch_size):
 	\begin{lstlisting}[frame=single,basicstyle=\linespread{1.5}\ttfamily,caption={\texttt{Batch-Norm} Algorithm}]
 $\epsilon = 10^{-8}$
 $\cal{B}$$ = \{x_{1\dots m}\}, m > 1$ $\color{ForestGreen}\Leftarrow Mini-Batch$
-$\color{ForestGreen} \text{mini-batch mean:}$
+   $\color{ForestGreen} \text{mini-batch mean:}$
 $\mu_{\cal{B}} \gets \frac{1}{m}\sum_{i=1}^{m}x_i$
-$\color{ForestGreen} \text{mini-batch variance:}$
+   $\color{ForestGreen} \text{mini-batch variance:}$
 $\sigma_{\cal{B}}^2 \gets \frac{1}{m}\sum_{i=1}^{m}(x_i - \mu_{\cal{B}})^2$
-$\color{ForestGreen} \text{normalize:}$
+   $\color{ForestGreen} \text{normalize:}$
 $\hat{x_i} \gets \frac{x_i - \mu_{\cal{B}}}{\sqrt{\sigma_{\cal{B}}^2 + \epsilon}}$
-$\color{ForestGreen} \text{scale and shift:}$
+   $\color{ForestGreen} \text{scale and shift:}$
 $y_i \gets {\color{blue}\gamma} \hat{x_i} + {\color{blue}\beta} \equiv BN_{\gamma,\beta}(x_i)$
 	\end{lstlisting}
 	
